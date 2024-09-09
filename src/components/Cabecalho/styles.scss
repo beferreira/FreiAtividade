@@ -1,0 +1,23 @@
+@import '../../colors';
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $segundaria;
+    color: $primaria;
+    padding: 12px 26px;
+
+    #logo {
+        display: flex;
+        align-items: center;
+        
+        img {
+            height: 64px;
+        }
+
+        h3 {
+            margin-left: 12px;
+        }
+    }
+}
