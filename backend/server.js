@@ -1,11 +1,13 @@
 import express from 'express';
 import cors from 'cors';
+import axios from 'axios';
 
 const servidor = express()
 const port = 8080
 
 servidor.use(express.json())
 servidor.use(cors())
+servidor.use(axios())
 
 servidor.get('/cards', (req, res) => {
     let cards = [
